@@ -1,0 +1,43 @@
+$deepGreen: #00474b;
+
+.tip-container {
+  display: grid;
+  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fit, 96px [col-start]);
+  grid-template-rows: 50px 50px;
+}
+
+.tip-button {
+  margin: 5px;
+  color: white;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: large;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: $deepGreen;
+
+  &:hover {
+    background-color: darkslategrey;
+    cursor: pointer;
+  }
+}
+
+.tip-input {
+  margin: 5px;
+  color: white;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: large;
+  border-color: transparent;
+  border-radius: 5px;
+  background: #f3f8fb;
+  color: black;
+  text-align: center;
+}
+
+.tip-label {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: left;
+}
