@@ -11,12 +11,14 @@ const InputField = ({
   name,
   onChange,
   icon,
+  inputRef,
 }: {
   label: string;
   type: HTMLInputTypeAttribute;
   id: string;
   name: string;
   icon: 'dollar' | 'user';
+  inputRef: any;
   onChange?: any;
 }) => {
   return (
@@ -24,6 +26,7 @@ const InputField = ({
       <label className="input-label">{label}</label>
       {icon === 'dollar' ? <DollarSVG className="icon" /> : <UserSVG className="icon"/> }
       <input
+        ref={inputRef}
         className={"input-input"}
         placeholder="0"
         type={type}

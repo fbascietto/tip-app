@@ -21,6 +21,11 @@ $deepGreen: #00474b;
     background-color: darkslategrey;
     cursor: pointer;
   }
+
+  &--selected {
+    background-color: rgb(60, 201, 201);
+    color: black;
+  }
 }
 
 .tip-input {

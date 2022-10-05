@@ -1,4 +1,4 @@
-$deepGreen: #00474B;
+$deepGreen: #00474b;
 
 #root {
   margin: 0 auto;
@@ -17,7 +17,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -30,7 +30,7 @@ input[type=number] {
   border-radius: 15px;
   margin: 10px 0;
   padding: 50px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .input-card {
@@ -39,8 +39,27 @@ input[type=number] {
 }
 
 .result-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0 15px 0 25px;
   background-color: $deepGreen;
   width: 300px;
   border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &__button {
+    font-family: monospace;
+    font-size: x-large;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0 20px 25px;
+    padding: 10px;
+    background-color: rgb(114, 245, 205);
+
+    &:hover {
+      background-color: #09c9d3;
+      cursor: pointer;
+    }
+  }
 }
