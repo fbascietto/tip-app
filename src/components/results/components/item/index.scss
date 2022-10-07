@@ -1,0 +1,28 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 15px;
+
+    &--detail {
+        color: lightgray;
+        font-weight: 200;
+        font-size: small;
+    }
+  }
+
+  &__amount {
+    margin: auto 0;
+    padding-right: 15px;
+    color: #2FBEAA;
+    font-size: xx-large;
+  }
+}

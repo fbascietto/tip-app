@@ -1,14 +1,80 @@
+$deepGreen: #00474b;
+
 #root {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: medium;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   color: black;
-  padding: 2em;
   background-color: white;
-  border-radius: 5px;
-  margin: 10px 0;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input-card {
+  margin: 25px 3px;
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $deepGreen;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  &__button {
+    font-family: monospace;
+    font-size: x-large;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0 20px 25px;
+    padding: 10px;
+    background-color: rgb(114, 245, 205);
+
+    &:hover {
+      background-color: #09c9d3;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Medium devices and up (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    margin: 10px 0;
+    padding: 50px;
+  }
+
+  .input-card {
+    margin: 0 25px 0 15px;
+    width: 300px;
+  }
+
+  .result-card {
+    margin: 0 15px 0 25px;
+  }
 }

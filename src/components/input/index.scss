@@ -1,0 +1,43 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.input-label {
+  display: flex;
+  justify-content: left;
+}
+
+.input-input {
+  height: 2rem;
+  background: #f3f8fb;
+  border-radius: 5px;
+  text-align: right;
+  border-color: transparent;
+  padding-right: 1rem;
+  font-family: monospace;
+  font-weight: 900;
+  font-size: large;
+}
+
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+  padding: 4px;
+  position: absolute;
+  box-sizing: border-box;
+  top: 70%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.dollar {
+  background: url(assets/dollar-symbol.png) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+}
+
+.user {
+  background: url(assets/dollar-symbol.png) no-repeat scroll 7px 7px;
+  padding-left: 30px;
+}
